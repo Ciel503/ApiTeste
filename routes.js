@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/rota1', function(req, res) {
+router.get('/', function(req, res) {
   res.send('Rota 1');
 });
 
