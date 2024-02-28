@@ -11,8 +11,8 @@ app.get("/contato",(req,res)=>{
 })
 
 
+const port = process.env.PORT || 3000;
 
-
-app.listen(process.env.PORT || 3000,(req,res)=>{
+app.listen(port,(req,res)=>{
     console.log("servidor rodando")
 })
