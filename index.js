@@ -10,7 +10,7 @@ rota.get("/contato",(req,res)=>{
     res.sendFile(path.join(__dirname + "/pages/contato.html"))
 })
 
-app.use(rota)
+app.use(rota);
 const port = process.env.PORT || 3000;
 
 app.listen(port,(req,res)=>{
