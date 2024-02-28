@@ -4,10 +4,10 @@ const app = express();
 const rota = express.Router();
 
 rota.get("/",(req,res)=>{
-    res.sendFile(path.join(__dirname + "home.html"))
+    res.sendFile(path.join(__dirname + "/home.html"))
 })
 rota.get("/contato",(req,res)=>{
-    res.sendFile(path.join(__dirname + "contato.html"))
+    res.sendFile(path.join(__dirname + "/contato.html"))
 })
 
 app.use(rota);
